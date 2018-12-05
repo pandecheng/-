@@ -21,6 +21,18 @@ contenteditable 规定元素内容为空时显示placeholder的内容
 	display: block;
 }
 
+设置input placeholder的字体颜色
+input::-webkit-input-placeholder {
+    color: #ccc;
+}
+
+input::-moz-input-placeholder {
+    color: #ccc;
+}
+
+input::-ms-input-placeholder {
+    color: #ccc;
+}
 
 webkit-playsinline video 都可以在页面中播放，而不是全屏播放
 <video id="myvideo" src="test.mp4" webkit-playsinline="true"></video>
@@ -138,12 +150,14 @@ word-break: normal;
 
 /*强制换行*/
 word-break:break-all;
+
 font-smoothing 设置字体平滑，会让字体看起来比较舒服
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .navbar, .brand, a, .td-name, td {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     font-family: "Microsoft YaHei", "微软雅黑", 'Muli', "Helvetica", Arial, sans-serif;
 }
+
 ::selection 修改选中文本颜色
 ::selection {
     color: white;
